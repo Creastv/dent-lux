@@ -15,7 +15,7 @@ h6 {
 p {
   font-family: "Inter", sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1230,5 +1230,186 @@ body {
   color: #fff;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+#opinions {
+  padding: 50px 0;
+  margin: 50px 0 20px;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  #opinions {
+    padding: 0 0 20px;
+  }
+}
+
+#opinions:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+  left: 0;
+  top: 0px;
+  height: 100%;
+  margin-left: -50vw;
+  left: 50%;
+  background: white;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0)), to(#eaf2f7));
+  background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, #eaf2f7 100%);
+}
+
+#opinions .opinions-wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  #opinions .opinions-wraper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+#opinions .opinions-wraper__info {
+  width: 40%;
+}
+
+@media only screen and (max-width: 768px) {
+  #opinions .opinions-wraper__info {
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+}
+
+#opinions .opinions-wraper__info h3 {
+  font-family: "Roboto Slab", serif;
+  font-size: 51px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  #opinions .opinions-wraper__info h3 {
+    font-size: 31px;
+  }
+}
+
+#opinions .opinions-wraper__info p {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+#opinions .opinions-wraper__info .opinions-wraper__social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#opinions .opinions-wraper__info .opinions-wraper__social li {
+  padding: 10px;
+}
+
+#opinions .opinions-wraper__info .opinions-wraper__social li span {
+  display: block;
+  text-align: center;
+}
+
+#opinions .opinions-wraper__info .opinions-wraper__social li span:nth-child(1) {
+  font-weight: 700;
+}
+
+#opinions .opinions-wraper__info .opinions-wraper__social li span:nth-child(2) {
+  color: #f39200;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 768px) {
+  #opinions .opinions-wraper__info .opinions-wraper__social li span:nth-child(2) {
+    font-size: 21px;
+  }
+}
+
+#opinions .opinions-wraper__slider {
+  width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+  #opinions .opinions-wraper__slider {
+    width: 100%;
+  }
+}
+
+#opinions .opinions-wraper__slider .swiper-slide {
+  padding: 15px;
+}
+
+#opinions .opinions-wraper__slider .opinions-wraper__item {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.019);
+          box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.019);
+}
+
+#opinions .opinions-wraper__slider .opinions-wraper__item .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#opinions .opinions-wraper__slider .arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 15px;
+}
+
+#opinions .opinions-wraper__slider .arrows .sw-button-next {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+#opinions .opinions-wraper__slider .arrows .sw-button-prev {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+#opinions .opinions-wraper__slider .arrows .sw-pagination {
+  width: auto;
+}
+
+#opinions .opinions-wraper__slider .arrows .sw-pagination span {
+  color: #000000 !important;
+  background: none;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+#opinions .opinions-wraper__slider .arrows .sw-pagination .swiper-pagination-bullet-active {
+  color: #f39200 !important;
+  font-weight: 700;
 }
 /*# sourceMappingURL=dl-main.css.map */

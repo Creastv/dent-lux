@@ -1,0 +1,127 @@
+#opinions {
+  padding: 50px 0;
+  margin: 50px 0 20px;
+  @media #{$sm} {
+    padding: 0 0 20px;
+  }
+
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    left: 0;
+    top: 0px;
+    height: 100%;
+    margin-left: -50vw;
+    left: 50%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0%, rgba(234, 242, 247, 1) 100%);
+  }
+  .opinions-wraper {
+    display: flex;
+    @media #{$sm} {
+      flex-wrap: wrap;
+    }
+  }
+  .opinions-wraper__info {
+    width: 40%;
+    @media #{$sm} {
+      width: 100%;
+      padding: 0 20px;
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-family: "Roboto Slab", serif;
+      font-size: 51px;
+      font-weight: 700;
+      margin-bottom: 0px;
+      @media #{$sm} {
+        font-size: 31px;
+      }
+      // margin-top: 0;
+    }
+    p {
+      margin-top: 0px;
+      margin-bottom: 30px;
+      display: block;
+    }
+    .opinions-wraper__social {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+
+      flex-wrap: wrap;
+
+      li {
+        padding: 10px;
+        span {
+          display: block;
+          text-align: center;
+          &:nth-child(1) {
+            font-weight: 700;
+          }
+          &:nth-child(2) {
+            color: $main;
+            font-size: 34px;
+            font-weight: 700;
+            @media #{$sm} {
+              font-size: 21px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .opinions-wraper__slider {
+    width: 60%;
+    // padding-left: 50px;
+    @media #{$sm} {
+      width: 100%;
+    }
+    .swiper-slide {
+      padding: 15px;
+    }
+    .opinions-wraper__item {
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.019);
+      .top {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .arrows {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 15px;
+      .sw-button-next {
+        padding: 0 10px;
+        cursor: pointer;
+      }
+      .sw-button-prev {
+        padding: 0 10px;
+        cursor: pointer;
+      }
+      .sw-pagination {
+        width: auto;
+        span {
+          color: $black !important;
+          background: none;
+          margin: 0 5px;
+          display: inline-block;
+        }
+        .swiper-pagination-bullet-active {
+          color: $main !important;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
