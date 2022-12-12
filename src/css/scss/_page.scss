@@ -1,0 +1,19 @@
+.entry-wraper {
+  display: flex;
+  aside {
+    width: 30%;
+  }
+}
+
+.entry-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media #{$sm} {
+    justify-content: center;
+  }
+  .entry-footer__col {
+    display: block;
+    padding: 25px 0;
+  }
+}

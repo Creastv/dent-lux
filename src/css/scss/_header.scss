@@ -1,0 +1,241 @@
+.js-navigation.active {
+  top: 0px;
+  opacity: 1;
+  transition: top 0.3s, opacity 0.6s linear;
+}
+
+#header.active {
+  background-color: rgba(255, 255, 255, 0.99);
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  .navbar {
+    padding: 10px 0;
+  }
+  .inf-contact {
+    @media #{$sm} {
+      height: 0;
+      overflow: hidden;
+    }
+  }
+}
+#header.up {
+  top: -200px !important;
+}
+
+#header {
+  transition: top 0.6s linear;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  top: 0px;
+}
+
+.navbar {
+  transition: all 0.3s linear;
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 0;
+  @media #{$sm} {
+    padding: 10px 0 55px 0;
+  }
+}
+
+.nav-brand {
+  flex: auto;
+  @media #{$sm} {
+    order: 2;
+  }
+}
+
+.header-nav {
+  // display: none;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  left: 0;
+  opacity: 0;
+  background-color: #fff;
+  ul {
+    text-align: center;
+    padding: 0;
+    padding-top: 150px;
+    height: 100%;
+    overflow-y: auto;
+    list-style: none;
+    text-align: center;
+    @media #{$sm} {
+      padding-top: 200px;
+    }
+    li.liVisible {
+      opacity: 1;
+      transform: translate(0, 0px);
+      transition: all 0.3s, opacity 1s linear;
+    }
+    li {
+      opacity: 0;
+      transform: translate(0, -20px);
+      a {
+        display: inline-block;
+        font-family: "Roboto Slab", serif;
+        font-weight: 400;
+        text-decoration: none;
+        font-size: 21px;
+        padding: 20px 20px;
+        color: $black;
+        @media #{$sm} {
+          font-size: 28px;
+          padding: 10px;
+        }
+        &:hover {
+          color: $main;
+        }
+      }
+    }
+  }
+}
+.js-toggler-nav.active,
+.toggler-nav:hover {
+  color: $main;
+  .toggler-nav__dots {
+    transition: all 0.3s linear;
+    transform: rotate(90deg);
+    transform-origin: center;
+    span {
+      background-color: $main;
+      &:before,
+      &:after {
+        background-color: $main !important;
+      }
+    }
+  }
+}
+
+.swicher-lang {
+  margin-right: 50px;
+  text-transform: uppercase;
+}
+.toggler-nav {
+  display: flex;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.3s linear;
+  @media #{$sm} {
+    order: 3;
+  }
+  span {
+    font-size: 14px;
+  }
+  .toggler-nav__dots {
+    transition: all 0.3s linear;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    span {
+      width: 5px;
+      height: 5px;
+      border-radius: 100%;
+      background-color: #fff;
+      display: block;
+      margin-bottom: 4px;
+      position: relative;
+      &:nth-child(1) {
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          border-radius: 100%;
+          background-color: #fff;
+          display: block;
+        }
+        &:before {
+          top: 0;
+          left: 8px;
+        }
+        &:after {
+          top: 0;
+          left: 16px;
+        }
+      }
+      &:nth-child(2) {
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          border-radius: 100%;
+          background-color: #fff;
+          display: block;
+        }
+        &:before {
+          top: 0;
+          left: 8px;
+        }
+      }
+    }
+  }
+}
+
+.inf-contact {
+  transition: all 0.3s linear;
+  @media #{$sm} {
+    width: 100%;
+    margin-bottom: 20px;
+    order: 1;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media #{$sm} {
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+    }
+    li {
+      margin: 0 10px;
+      @media #{$sm} {
+        margin: 5px;
+      }
+      a {
+        min-width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 35px;
+        // border: 1px solid #525252;
+        border: 1px solid $gray;
+        border-radius: 100px;
+        text-decoration: none;
+        color: $black;
+        font-size: 21px;
+        font-weight: 900;
+        @media #{$sm} {
+          min-width: 50%;
+          padding: 10px 15px;
+          font-size: 12px;
+        }
+        span {
+          margin-left: 10px;
+        }
+        &:hover {
+          background-color: $main;
+          border: 1px solid $main;
+          transition: all 0.3s linear;
+          path {
+            fill: #fff;
+            transition: all 0.3s linear;
+          }
+        }
+      }
+    }
+  }
+}

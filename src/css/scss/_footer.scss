@@ -1,0 +1,267 @@
+#footer {
+  background-color: #111112;
+  width: 100%;
+  // margin-top: 100px;
+}
+.full_inf {
+  padding: 20px 0;
+  @media #{$sm} {
+    padding: 20px 0 0;
+  }
+
+  .full_inf--wraper {
+    display: flex;
+    justify-content: center;
+    @media #{$sm} {
+      flex-wrap: wrap;
+    }
+  }
+  .full_inf--item {
+    display: flex;
+    padding: 25px 50px;
+    border-right: 1px solid $gray;
+    @media #{$xlg} {
+      padding: 20px;
+    }
+    @media #{$md} {
+      padding: 15px;
+    }
+    @media #{$sm} {
+      border: none;
+      border-bottom: 1px solid $gray;
+      padding: 15px;
+    }
+    @media #{$xs} {
+      width: 100%;
+    }
+    &:last-child {
+      border: none;
+    }
+    .icon {
+      margin-right: 20px;
+    }
+    .h4 {
+      font-weight: 700;
+      font-size: 28px;
+      color: $black;
+      margin-bottom: 10px;
+
+      @media #{$xlg} {
+        font-size: 21px;
+      }
+      @media #{$sm} {
+        font-size: 21px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 26px;
+      color: $p;
+    }
+    a {
+      color: $p;
+      &:hover {
+        color: $main;
+      }
+    }
+  }
+}
+
+.footer__wraper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer__w__contact {
+  width: 33%;
+  @media #{$lg} {
+    width: 50%;
+  }
+  @media #{$sm} {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.footer__w__contact--wraper {
+  margin-top: -130px;
+  position: relative;
+  z-index: 2;
+  padding: 100px 15px 100px 0;
+  @media #{$md} {
+    width: 100%;
+  }
+  @media #{$sm} {
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    order: 1;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgb(245, 165, 0);
+    background: linear-gradient(98deg, rgba(245, 165, 0, 1) 0%, rgba(239, 123, 0, 1) 100%);
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 200%;
+    height: 100%;
+    z-index: -1;
+    @media #{$sm} {
+      width: 100%;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+  }
+  .g-buttons {
+    margin-top: 35px;
+    ul {
+      list-style: none;
+      padding: 0;
+
+      @media #{$sm} {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      li {
+        a {
+          color: #fff;
+          min-width: auto;
+          margin: 20px 0;
+          font-size: 21px;
+          font-weight: 600;
+          @media #{$md} {
+            margin: 20px;
+            font-size: 14px;
+          }
+          @media #{$sm} {
+            font-size: 14px;
+          }
+          span {
+            margin-left: 10px;
+          }
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer__info {
+  padding: 15px 0;
+  ul {
+    display: flex;
+    gap: 45px;
+    padding: 0;
+    list-style: none;
+    li {
+      p {
+        font-size: 14px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.footer__w__menus {
+  padding: 50px;
+  width: 67%;
+  @media #{$lg} {
+    width: 50%;
+  }
+  @media #{$sm} {
+    padding: 30px 0;
+    width: 100%;
+    order: 2;
+  }
+}
+.footer__w__menus__wraper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.footer__w__menus--item {
+  padding: 15px;
+  width: 25%;
+  @media #{$lg} {
+    width: 50%;
+  }
+  @media #{$sm} {
+    width: 25%;
+  }
+  @media #{$xs} {
+    width: 50%;
+  }
+  .h4 {
+    color: #fff !important;
+  }
+  span.h4 {
+    display: block;
+    min-height: 28px;
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+    li {
+      a {
+        color: #cccccc;
+        font-size: 14px;
+        display: inline-block;
+        padding: 5px 0;
+        &:hover {
+          color: $main;
+        }
+      }
+    }
+  }
+}
+
+.sticky-social-media {
+  position: fixed;
+  top: 50%;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.3);
+  transform: translate(0, -50%);
+  right: 0px;
+  padding: 20px;
+  ul {
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+    li {
+      a {
+        padding: 10px 0;
+        display: inline-block;
+        &:hover {
+          path {
+            fill: $main;
+          }
+        }
+      }
+    }
+  }
+}
+
+#go-to-top.active {
+  bottom: 40px;
+  transform: all 0.8s;
+}
+
+#go-to-top {
+  position: fixed;
+  cursor: pointer;
+  z-index: 9;
+  width: 22px;
+  height: 14px;
+  bottom: -100px;
+  right: 20px;
+  background-image: url("../img/go-to-top.png");
+  background-size: contain;
+  background-position: center;
+  transform: all 0.8s;
+}
