@@ -1412,4 +1412,126 @@ body {
   color: #f39200 !important;
   font-weight: 700;
 }
+
+#about-us {
+  padding: 0 0 60px 0;
+}
+
+.about-us__wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  gap: 60px;
+}
+
+@media only screen and (max-width: 998px) {
+  .about-us__wraper {
+    gap: 60px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-us__wraper {
+    gap: 0;
+  }
+}
+
+.about-us__col {
+  width: 33.333%;
+}
+
+.about-us__col:nth-child(3) {
+  position: relative;
+}
+
+@media only screen and (max-width: 998px) {
+  .about-us__col:nth-child(3):before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    width: 1px;
+    height: 100%;
+    background-color: #f39200;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .about-us__col:nth-child(2) {
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  .about-us__col {
+    width: calc(50% - 30px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-us__col {
+    width: 100%;
+  }
+}
+
+.img {
+  min-height: 300px;
+  height: calc(100% + 100px);
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  border-radius: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+  .img {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    height: 100%;
+  }
+}
+
+.img svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.about-us__bulet {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eaf2f7;
+}
+
+.about-us__bulet .h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.about-us__bulet p {
+  font-size: 14px;
+}
+
+.about-us__bulets--left {
+  text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-us__bulets--left {
+    text-align: left;
+  }
+}
 /*# sourceMappingURL=dl-main.css.map */
