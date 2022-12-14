@@ -6,9 +6,28 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-family: "Roboto Slab", serif;
-  font-weight: 400;
+  font-weight: 700;
+}
+.h1 {
+  font-size: 38px;
+}
+.h2 {
+}
+.h3 {
+}
+.h4 {
+}
+.h5 {
+}
+.h6 {
 }
 p {
   font-family: "Inter", sans-serif;
@@ -117,13 +136,16 @@ a {
     max-width: 768px;
     margin: 0 auto;
     color: $p;
+    margin-top: 30px;
   }
   .brand-svg {
     width: 100%;
     position: absolute;
+    z-index: -1;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    opacity: 0.062;
   }
 }
 

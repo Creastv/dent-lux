@@ -8,7 +8,7 @@
   background-color: rgba(255, 255, 255, 0.99);
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
   .navbar {
-    padding: 10px 0;
+    padding: 0px 15px;
   }
   .inf-contact {
     @media #{$sm} {
@@ -37,7 +37,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 0;
+  padding: 15px 15px;
   @media #{$sm} {
     padding: 10px 0 55px 0;
   }
@@ -45,9 +45,9 @@
 
 .nav-brand {
   flex: auto;
-  @media #{$sm} {
-    order: 2;
-  }
+  // @media #{$sm} {
+  //   order: 1;
+  // }
 }
 
 .header-nav {
@@ -98,94 +98,79 @@
     }
   }
 }
-.js-toggler-nav.active,
-.toggler-nav:hover {
-  color: $main;
-  .toggler-nav__dots {
-    transition: all 0.3s linear;
-    transform: rotate(90deg);
-    transform-origin: center;
-    span {
-      background-color: $main;
-      &:before,
-      &:after {
-        background-color: $main !important;
-      }
-    }
-  }
-}
-
-.swicher-lang {
-  margin-right: 50px;
-  text-transform: uppercase;
-}
-.toggler-nav {
+.navbar__toggler {
   display: flex;
+  align-items: center;
+  gap: 10px;
+  transform: translateY(-2px);
+  margin-left: 30px;
+  @media #{$lg} {
+    display: flex;
+  }
   cursor: pointer;
-  padding: 10px;
-  transition: all 0.3s linear;
-  @media #{$sm} {
-    order: 3;
+  > span {
+    font-size: 21px;
+    transform: translateY(1px);
   }
-  span {
-    font-size: 14px;
-  }
-  .toggler-nav__dots {
-    transition: all 0.3s linear;
-    margin-left: 10px;
-    width: 30px;
-    height: 30px;
+  .navbar__toggler__btn {
     span {
-      width: 5px;
-      height: 5px;
-      border-radius: 100%;
-      background-color: #fff;
       display: block;
-      margin-bottom: 4px;
-      position: relative;
+      width: 44px;
+      height: 3px;
+      border-radius: 100px !important;
+      background-color: $main;
+      transition: all 0.1s linear;
       &:nth-child(1) {
-        &:before,
-        &:after {
-          content: "";
-          position: absolute;
-          width: 5px;
-          height: 5px;
-          border-radius: 100%;
-          background-color: #fff;
-          display: block;
-        }
-        &:before {
-          top: 0;
-          left: 8px;
-        }
-        &:after {
-          top: 0;
-          left: 16px;
-        }
+        width: 34px;
       }
       &:nth-child(2) {
-        &:before,
-        &:after {
-          content: "";
-          position: absolute;
-          width: 5px;
-          height: 5px;
-          border-radius: 100%;
-          background-color: #fff;
-          display: block;
-        }
-        &:before {
-          top: 0;
-          left: 8px;
+        transform: translateY(4px);
+      }
+      &:nth-child(3) {
+        transform: translate(10px, 8px);
+        width: 34px;
+      }
+    }
+  }
+  &:hover {
+    .navbar__toggler__btn {
+      span {
+        display: block;
+        width: 44px !important;
+        &:nth-child(3) {
+          transform: translate(0px, 8px);
         }
       }
     }
   }
 }
 
+.navbar__toggler.active {
+  .navbar__toggler__btn {
+    span {
+      // transform-origin: 50% 0;
+      width: 44px !important;
+      &:nth-child(1) {
+        transform: translateY(0) rotate(45deg);
+        transform-origin: 50% 0;
+      }
+      &:nth-child(2) {
+        // width: 0px;
+        opacity: 0;
+        width: 0px !important;
+      }
+      &:nth-child(3) {
+        transform: translateY(0) rotate(-45deg);
+        width: 44px;
+        transform-origin: 30% 0;
+      }
+    }
+  }
+}
 .inf-contact {
   transition: all 0.3s linear;
   @media #{$sm} {
+    display: none;
     width: 100%;
     margin-bottom: 20px;
     order: 1;
@@ -205,6 +190,11 @@
       @media #{$sm} {
         margin: 5px;
       }
+      &:first-child {
+        @media #{$lg} {
+          display: none;
+        }
+      }
       a {
         min-width: 250px;
         display: flex;
@@ -216,8 +206,14 @@
         border-radius: 100px;
         text-decoration: none;
         color: $black;
-        font-size: 21px;
+        font-size: 18px;
         font-weight: 900;
+        transition: all 0.3s linear;
+
+        @media #{$md} {
+          font-size: 21px !important;
+          min-width: initial;
+        }
         @media #{$sm} {
           min-width: 50%;
           padding: 10px 15px;
@@ -230,6 +226,7 @@
           background-color: $main;
           border: 1px solid $main;
           transition: all 0.3s linear;
+          color: #fff;
           path {
             fill: #fff;
             transition: all 0.3s linear;
