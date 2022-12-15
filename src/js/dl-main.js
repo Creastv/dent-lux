@@ -29,15 +29,6 @@
       }, 100);
     }, 0);
   }
-  // Close after click the navmenu on mobile
-  // const itemsNAv = document.querySelectorAll(".js-navigation a");
-  // for (let i = 0; i < itemsNAv.length; i++) {
-  //   itemsNAv[i].addEventListener("click", () => {
-  //     nav.classList.remove("active");
-  //     togglerNav.classList.remove("active");
-  //     navFlag = false;
-  //   });
-  // }
   // Go to Top
   const goToTop = document.querySelector("#go-to-top");
   goToTop.addEventListener("click", () => {
@@ -52,7 +43,7 @@
   });
   // sticy nabvbar
   const navbar = document.querySelector("#header");
-  var lastScrollTop = 0;
+  // var lastScrollTop = 0;
   document.addEventListener("scroll", () => {
     var st = window.pageYOffset || document.documentElement.scrollTop;
     if (window.pageYOffset >= 50) {
@@ -60,14 +51,14 @@
     } else {
       navbar.classList.remove("active");
     }
-    if (window.pageYOffset >= 400) {
-      if (st > lastScrollTop) {
-        navbar.classList.add("up");
-      } else {
-        navbar.classList.remove("up");
-      }
-    }
-    lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+    // if (window.pageYOffset >= 400) {
+    //   if (st > lastScrollTop) {
+    //     navbar.classList.add("up");
+    //   } else {
+    //     navbar.classList.remove("up");
+    //   }
+    // }
+    // lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
   });
 
   // set body padding top by geting header height

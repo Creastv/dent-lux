@@ -21,6 +21,7 @@
   }
   .opinions-wraper {
     display: flex;
+    align-items: flex-start;
     @media #{$sm} {
       flex-wrap: wrap;
     }
@@ -43,6 +44,8 @@
       // margin-top: 0;
     }
     p {
+      color: $black;
+      font-size: 21px;
       margin-top: 0px;
       margin-bottom: 30px;
       display: block;
@@ -95,27 +98,45 @@
         display: flex;
         justify-content: space-between;
       }
+      .content {
+        .h3 {
+          font-size: 18px;
+          color: $black !important;
+        }
+        p {
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
     }
     .arrows {
       display: flex;
       align-items: center;
       justify-content: flex-end;
       padding: 15px;
-      .sw-button-next {
-        padding: 0 10px;
-        cursor: pointer;
-      }
+      .sw-button-next,
       .sw-button-prev {
+        outline: 0;
         padding: 0 10px;
         cursor: pointer;
+        &:hover {
+          path {
+            fill: $main;
+          }
+        }
       }
       .sw-pagination {
         width: auto;
         span {
-          color: $black !important;
+          outline: 0;
+          opacity: 1;
+          color: $black;
           background: none;
           margin: 0 5px;
           display: inline-block;
+          &:hover {
+            color: $main;
+          }
         }
         .swiper-pagination-bullet-active {
           color: $main !important;

@@ -45,9 +45,12 @@
 
 .nav-brand {
   flex: auto;
-  // @media #{$sm} {
-  //   order: 1;
-  // }
+  @media #{$sm} {
+    max-width: 50%;
+    svg {
+      width: 100%;
+    }
+  }
 }
 
 .header-nav {

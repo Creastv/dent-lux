@@ -14,7 +14,12 @@ $sliders = get_field('slajdy');
                                     <div class="slider__content">
                                         <h1 class="h1"><?php echo $slide['tytul'];?></h1>
                                         <p><?php echo $slide['dopisek'];?></p>
-                                        <a href="<?php echo $slide['link']['url'];?>" class="btn "><?php echo $slide['link']['title'];?></a>
+                                        <a href="<?php echo $slide['link']['url'];?>" class="btn ">
+                                            <?php echo $slide['link']['title'];?>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="15.999" viewBox="0 0 33 15.999">
+                                                <path id="Shape_15" data-name="Shape 15" d="M1490,1307.323a9.537,9.537,0,0,1-.74.949q-3.126,3.139-6.276,6.255a1.306,1.306,0,0,1-1.821.182,1.283,1.283,0,0,1-.061-1.955c1.083-1.089,2.177-2.167,3.264-3.252.385-.384.766-.773,1.2-1.214h-.431q-13.242,0-26.483.011a1.548,1.548,0,0,1-1.653-.977v-.645a.291.291,0,0,0,.058-.072,1.309,1.309,0,0,1,1.369-.9q13.339.008,26.677,0h.464c-.117-.124-.19-.205-.267-.282-1.4-1.394-2.807-2.783-4.2-4.185a1.295,1.295,0,1,1,1.861-1.8q1.858,1.857,3.724,3.7c.861.856,1.729,1.7,2.574,2.575a10.659,10.659,0,0,1,.74.949Z" transform="translate(-1457 -1299.001)" fill="#fff"></path>
+                                            </svg>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

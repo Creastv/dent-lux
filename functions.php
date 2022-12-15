@@ -1,7 +1,7 @@
 <?php
 add_theme_support('post-thumbnails');
 add_post_type_support( 'page', 'excerpt' );
-add_image_size( 'logo', 200, 62, array( 'center', 'center' ) );
+add_image_size( 'icon', 45, 45, array( 'center', 'center' ) );
 add_image_size( 'oferta', 425, 190, array( 'center', 'center' ) );
 
 if ( ! function_exists( 'dev_register_nav_menu' ) ) {
@@ -12,34 +12,6 @@ if ( ! function_exists( 'dev_register_nav_menu' ) ) {
     }
     add_action( 'after_setup_theme', 'dev_register_nav_menu', 0 );
 }
-function dl_widgets_init() {
-
-	register_sidebar( array(
-		'name'          => __( 'Footer 1', 'dl' ),
-		'id'            => 'footer-1',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h4 class="widget-title-fo">',
-		'after_title'   => '</h4>',
-	) );
-	register_sidebar( array(
-		'name'          => __( 'Footer 2', 'dl' ),
-		'id'            => 'footer-2',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h4 class="widget-title-fo">',
-		'after_title'   => '</h4>',
-	) );
-    register_sidebar( array(
-		'name'          => __( 'Sidebar', 'dl' ),
-		'id'            => 'sidebar-1',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h4 class="widget-title-fo">',
-		'after_title'   => '</h4>',
-	) );
-}
-add_action( 'widgets_init', 'dl_widgets_init' );
 
 function dev_scripts() {
 	wp_enqueue_style( 'dl-style', get_stylesheet_uri() );

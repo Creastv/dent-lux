@@ -1,6 +1,10 @@
 var swiper = new Swiper(".opinion", {
   slidesPerView: 1,
   loop: true,
+  autoplay: {
+    delay: 3900,
+    disableOnInteraction: false
+  },
   pagination: {
     el: ".sw-pagination",
     clickable: true,

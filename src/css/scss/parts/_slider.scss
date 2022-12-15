@@ -1,7 +1,7 @@
 body.home {
   padding: 0px !important;
   #header {
-    position: absolute;
+    position: fixed;
   }
 }
 #slider {
@@ -12,6 +12,9 @@ body.home {
   left: 50%;
   position: relative;
   top: -20px;
+  @media #{$sm} {
+    margin-bottom: 20px;
+  }
   .container-entry {
     position: relative;
     height: 100%;
@@ -35,6 +38,9 @@ body.home {
   bottom: -100px;
   right: 30px;
   text-align: right;
+  @media #{$sm} {
+    width: 80%;
+  }
   span {
     position: absolute;
     top: 10%;
@@ -42,12 +48,13 @@ body.home {
     font-size: 25px;
     @media #{$sm} {
       font-size: 16px;
-      top: inicail;
+      // top: initial;
       bottom: 0px;
+      right: 10px;
     }
   }
   svg {
-    opacity: 0.23;
+    opacity: 0.15;
     width: 100%;
   }
 }
@@ -89,5 +96,9 @@ body.home {
   }
   .btn {
     padding: 15px 35px;
+    font-size: 21px;
+    svg {
+      margin-left: 15px;
+    }
   }
 }

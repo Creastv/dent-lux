@@ -32,7 +32,7 @@ $video = get_field('video');
                 <?php foreach( $bLeft as $bl ) { ?>
                 <div class="about-us__bulet">
                     <div class="icona">
-                        <?php echo $bl['icona']; ?>
+                        <?php echo $bl['ikona']; ?>
                     </div>
                     <p class="h4"><?php echo $bl['tytul']; ?></p>
                     <p><?php echo $bl['opis']; ?></p>
@@ -42,7 +42,7 @@ $video = get_field('video');
         </div>
         <div class="about-us__col">
             <div class="img" style="background-image:url('<?php echo $img; ?>')">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="274.291" height="271.072" viewBox="0 0 274.291 271.072">
+                <svg id="play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="274.291" height="271.072" viewBox="0 0 274.291 271.072">
                     <defs>
                         <filter id="Shape_25" x="0" y="0" width="274.291" height="271.072" filterUnits="userSpaceOnUse">
                             <feOffset dx="2.572" dy="1.545" input="SourceAlpha" />
@@ -64,7 +64,7 @@ $video = get_field('video');
                 <?php foreach( $bRight as $bl ) { ?>
                 <div class="about-us__bulet">
                     <div class="icona">
-                        <?php echo $bl['icona']; ?>
+                        <?php echo $bl['ikona']; ?>
                     </div>
                     <p class="h4"><?php echo $bl['tytul']; ?></p>
                     <p><?php echo $bl['opis']; ?></p>
@@ -73,4 +73,38 @@ $video = get_field('video');
             </div>
         </div>
     </div>
+    <div id="modal-video">
+        <span class="modal-bg"></span>
+        <div class="modal-content">
+            <span class="stop">X</span>
+            <video id="myVideo" width="100%" height="auto" controls>
+                <source src=" <?php echo $video['mp4'] ?>" type="video/mp4">
+                <source src=" <?php echo $video['webm'] ?>" type="video/webm">
+                Your browser does not support HTML video.
+            </video>
+
+        </div>
+    </div>
 </section>
+
+<script>
+const play = document.querySelector('#play');
+const stop = document.querySelector('.stop');
+const video = document.querySelector('#myVideo');
+let flag = false;
+
+function player(e) {
+    if (flag == false) {
+        document.querySelector('#modal-video').style.display = "block";
+        video.play();
+        flag = true
+    } else {
+        document.querySelector('#modal-video').style.display = "none";
+        video.pause();
+        flag = false
+    }
+}
+
+play.addEventListener('click', player);
+stop.addEventListener('click', player);
+</script>

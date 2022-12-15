@@ -260,8 +260,10 @@
   height: 14px;
   bottom: -100px;
   right: 20px;
-  background-image: url("../img/go-to-top.png");
-  background-size: contain;
-  background-position: center;
   transform: all 0.8s;
+  svg {
+    path {
+      fill: $main;
+    }
+  }
 }
