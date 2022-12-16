@@ -39,6 +39,9 @@
     font-weight: 700;
     margin-bottom: 0px;
     color: $black;
+    @media #{$sm} {
+      font-size: 31px;
+    }
   }
   p {
     font-size: 22px;

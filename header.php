@@ -15,7 +15,7 @@
 
 <body <?php body_class(); ?>>
     <header id="header" class="js-header" itemscope itemtype="http://schema.org/WPHeader">
-        <div class="container-full">
+        <div class="container">
             <div class="row">
                 <?php get_template_part('templates-parts/header/header', 'nav'); ?>
                 <div class="navbar">
@@ -28,4 +28,4 @@
     </header>
     <main id="main">
         <div class="container-entry">
-           <div class="row">
+            <div class="row">

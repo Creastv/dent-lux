@@ -1,0 +1,17 @@
+#about-us-ext {
+  .about-us-ext__wraper {
+    display: flex;
+  }
+  .about-us-ext__col {
+    width: 50%;
+    &:nth-child(1) {
+      width: 40%;
+    }
+    &:nth-child(2) {
+      width: 60%;
+    }
+  }
+  .title-page-wraper {
+    text-align: left;
+  }
+}
