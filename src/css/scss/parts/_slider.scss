@@ -11,7 +11,7 @@ body.home {
   margin-bottom: 150px;
   left: 50%;
   position: relative;
-  top: -20px;
+  top: -50px;
   @media #{$sm} {
     margin-bottom: 20px;
   }
@@ -29,6 +29,9 @@ body.home {
   background-color: #fff;
   background-position: top right;
   background-size: cover;
+  @media #{$sm} {
+    background-position: 66%;
+  }
 }
 
 .svg-brand {
@@ -97,6 +100,10 @@ body.home {
   .btn {
     padding: 15px 35px;
     font-size: 21px;
+    @media #{$sm} {
+      padding: 10px 35px;
+      font-size: 16px;
+    }
     svg {
       margin-left: 15px;
     }

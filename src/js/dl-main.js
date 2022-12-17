@@ -7,13 +7,18 @@
     if (navFlag == false) {
       nav.classList.add("active");
       togglerNav.classList.add("active");
-      document.querySelector("body").style.overflow = "hidden";
+      document.querySelector("#header").style.transform = "translateX(-300px)";
+      document.querySelector("#main").style.transform = "translateX(-300px)";
+      document.querySelector("#footer").style.transform = "translateX(-300px)";
+      document.querySelector("html").style.overflowY = "hidden";
       navFlag = true;
     } else {
       nav.classList.remove("active");
       togglerNav.classList.remove("active");
-      document.querySelector("body").style.overflow = "inherit";
-      // document.querySelector(".js-header").classList.remove("active");
+      document.querySelector("#header").style.transform = "initial";
+      document.querySelector("#main").style.transform = "initial";
+      document.querySelector("#footer").style.transform = "initial";
+      document.querySelector("html").style.overflowY = "initial";
       navFlag = false;
     }
     loadItemsNav();

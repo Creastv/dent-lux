@@ -7,7 +7,7 @@
 .entry-wraper {
   display: flex;
   flex-wrap: wrap;
-  max-width: 998px;
+  max-width: 1100px;
   width: 100%;
   margin: 0 auto;
   margin-bottom: 50px;
@@ -59,7 +59,7 @@
       }
     }
   }
-  .entry-content {
+  .content-wraper {
     width: 70%;
     border-left: 1px solid $light;
     padding-left: 30px;

@@ -23,20 +23,13 @@ while ( have_posts() ) : the_post(); ?>
             <?php } ?>
             <?php } ?>
         </aside>
-        <div class="entry-content">
-            <?php
-			if(is_page(28)) {
-			get_template_part( 'templates-parts/parts/faq' );
-			} elseif(is_page(12)) {
-			get_template_part( 'templates-parts/parts/prices' );
-			} elseif(is_page(10)) {
-			get_template_part( 'templates-parts/parts/team' );
-			} elseif(is_page(30)) {
-			get_template_part( 'templates-parts/parts/gallery' );
-			}
-			?>
-            <?php the_content(); ?>
-            <div class="entry-footer">
+        <div class="content-wraper">
+            <div class="entry-content">
+                <?php the_post_thumbnail('thumbnail', array('class' => 'float-left')); ?>
+                <?php the_content(); ?>
+                <?php get_template_part( 'templates-parts/parts/link-to-price' ); ?>
+            </div>
+            <footer class="entry-footer">
                 <div classs="entry-footer__col">
                     <span>Twoja ocena:</span>
                     <?php echo kk_star_ratings();?>
@@ -45,10 +38,9 @@ while ( have_posts() ) : the_post(); ?>
                     <span>Udostępnij:</span>
                     <?php echo do_shortcode('[addtoany]'); ?>
                 </div>
-            </div>
+            </footer>
         </div>
     </div>
 </article>
-
 <?php endwhile;
 get_footer();

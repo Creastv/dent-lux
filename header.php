@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-    <meta name="theme-color" content="#004e9d">
+    <meta name="theme-color" content="#eaf2f7">
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@
     <header id="header" class="js-header" itemscope itemtype="http://schema.org/WPHeader">
         <div class="container">
             <div class="row">
-                <?php get_template_part('templates-parts/header/header', 'nav'); ?>
+
                 <div class="navbar">
                     <?php get_template_part('templates-parts/header/header', 'brand'); ?>
                     <?php get_template_part('templates-parts/header/header', 'contact'); ?>
@@ -26,6 +26,7 @@
             </div>
         </div>
     </header>
+    <?php get_template_part('templates-parts/header/header', 'nav'); ?>
     <main id="main">
         <div class="container-entry">
             <div class="row">

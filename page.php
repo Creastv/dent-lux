@@ -4,9 +4,11 @@ while ( have_posts() ) : the_post(); ?>
 
 <article id="post-<?php the_ID(); ?>" class="hentry" <?php post_class(); ?>>
     <?php get_template_part( 'templates-parts/header/header', 'title' ); ?>
+    <?php if ( !empty($the_content) ) { ?>
     <div class="entry-content entry-content--narrow">
         <?php the_content(); ?>
     </div>
+    <?php } ?>
     <?php if (is_page('uslugi')) :
 		get_template_part( 'templates-parts/parts/uslugi' );
 		endif;

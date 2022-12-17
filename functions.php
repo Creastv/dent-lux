@@ -2,7 +2,8 @@
 add_theme_support('post-thumbnails');
 add_post_type_support( 'page', 'excerpt' );
 add_image_size( 'icon', 45, 45, array( 'center', 'center' ) );
-add_image_size( 'oferta', 425, 190, array( 'center', 'center' ) );
+add_image_size( 'person', 175, 175, array( 'center', 'center' ) );
+add_image_size( 'gallery', 250, 220, array( 'center', 'center' ) );
 
 if ( ! function_exists( 'dev_register_nav_menu' ) ) {
     function dev_register_nav_menu(){

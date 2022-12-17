@@ -1,0 +1,22 @@
+#gallery {
+  .gallery__wraper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    .gallery__item {
+      width: calc(33.333% - 5px);
+      @media #{$sm} {
+        width: calc(50% - 5px);
+      }
+
+      a {
+        display: block;
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+#team {
+}
+.team__wraper {
+}
+.team__person {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  @media #{$sm} {
+    flex-wrap: wrap;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid $light;
+    bottom: 0px;
+    left: -30px;
+  }
+  .team__person_img {
+    width: 175px;
+    height: 175px;
+    border-radius: 100%;
+    overflow: hidden;
+    text-align: center;
+  }
+  .team__person_content {
+    width: calc(100% - 175px);
+    @media #{$sm} {
+      width: 100%;
+    }
+    .h2 {
+      position: relative;
+      margin-bottom: 0px;
+      padding-bottom: 15px;
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 1px;
+        background-color: $main;
+      }
+    }
+    .poz {
+      * {
+        color: $black;
+        font-weight: 500;
+      }
+      a {
+        color: $main;
+        text-decoration: underline;
+      }
+    }
+  }
+}

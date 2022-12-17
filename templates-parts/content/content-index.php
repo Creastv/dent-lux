@@ -1,7 +1,5 @@
 <article id="post-<?php the_ID(); ?>" class="hentry" <?php post_class(); ?>>
-    <h2 class="entry-title">
-         <?php get_template_part('templates-parts/header/header', 'title'); ?>
-    </h2>
+    <?php get_template_part('templates-parts/header/header', 'title'); ?>
     <div class="meta-group">
         <div class="meta meta-category">
             <span><?php _e(' Kategoria: ', 'dl' ); ?></span>
@@ -12,7 +10,7 @@
         </time>
         <div class="meta">
             <div class="vcard">
-              <?php the_author_posts_link(); ?>
+                <?php the_author_posts_link(); ?>
             </div>
         </div>
     </div>

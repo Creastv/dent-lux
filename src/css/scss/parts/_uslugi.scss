@@ -1,5 +1,8 @@
 #offers {
   margin-bottom: 50px;
+  @media #{$sm} {
+    margin-bottom: 0;
+  }
 }
 .offers__wraper {
   display: flex;

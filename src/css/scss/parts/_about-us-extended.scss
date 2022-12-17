@@ -1,17 +1,91 @@
 #about-us-ext {
+  margin-bottom: 50px;
+  padding-top: 50px;
+  position: relative;
+  @media #{$sm} {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .brand-svg {
+    opacity: 0.062;
+    position: absolute;
+    width: 70%;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    @media #{$sm} {
+      width: 100%;
+      top: -50px;
+    }
+  }
   .about-us-ext__wraper {
     display: flex;
+    @media #{$sm} {
+      flex-wrap: wrap;
+    }
   }
   .about-us-ext__col {
-    width: 50%;
     &:nth-child(1) {
-      width: 40%;
+      width: 45%;
+      padding: 20px;
+      @media #{$sm} {
+        order: 2;
+        width: 100%;
+      }
     }
     &:nth-child(2) {
-      width: 60%;
+      padding: 20px;
+      width: 55%;
+      @media #{$sm} {
+        order: 1;
+        padding: inherit;
+        width: 100%;
+      }
     }
   }
   .title-page-wraper {
     text-align: left;
+    margin-bottom: 20px;
+    @media #{$sm} {
+      text-align: center;
+    }
+    .title-page {
+      margin: 0;
+    }
+    .h2 {
+      font-size: 24px;
+      line-height: 36px;
+      color: $black;
+    }
+    p {
+      padding-left: 0;
+      margin-left: 0;
+    }
+  }
+}
+
+.ga-about-ex {
+}
+.ga-about-ex__wraper {
+}
+.ga-about-ex__item {
+  &:nth-child(1) {
+    width: 80%;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &:nth-child(2) {
+    width: 80%;
+    height: auto;
+    margin-top: -50px;
+    margin-left: 50px;
+    text-align: right;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
