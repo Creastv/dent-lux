@@ -19,7 +19,7 @@ body {
 
 .container {
   max-width: 1630px;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   @media #{$sm} {
     width: 100%;
@@ -28,7 +28,7 @@ body {
 
 .container-entry {
   max-width: 1400px;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   // margin-bottom: 50px;
   @media #{$sm} {

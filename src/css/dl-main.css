@@ -239,7 +239,7 @@ body {
 
 .container {
   max-width: 1630px;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -251,7 +251,7 @@ body {
 
 .container-entry {
   max-width: 1400px;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -506,7 +506,7 @@ body {
   color: #fff;
   min-width: auto;
   margin: 20px 0;
-  font-size: 21px;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -2016,8 +2016,9 @@ body {
 }
 
 .team__person .team__person_img {
-  width: 175px;
-  height: 175px;
+  width: 150px;
+  height: 150px;
+  margin-right: 30px;
   border-radius: 100%;
   overflow: hidden;
   text-align: center;
@@ -2069,7 +2070,7 @@ body.home #header {
 
 #slider {
   width: 100vw;
-  height: 80vh;
+  height: 95vh;
   margin-left: -50vw;
   margin-bottom: 150px;
   left: 50%;
