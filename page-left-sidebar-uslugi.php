@@ -25,7 +25,7 @@ while ( have_posts() ) : the_post(); ?>
         </aside>
         <div class="content-wraper">
             <div class="entry-content">
-                <?php the_post_thumbnail('thumbnail', array('class' => 'float-left')); ?>
+                <?php the_post_thumbnail('medium', array('class' => 'float-left')); ?>
                 <?php the_content(); ?>
                 <?php get_template_part( 'templates-parts/parts/link-to-price' ); ?>
             </div>

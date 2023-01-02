@@ -8,6 +8,7 @@ if( $link ){
     $link_target = $link['target'] ? $link['target'] : '_self';
 }
 ?>
+<?php if($title && $subtitle ) { ?>
 <section id="banner-hor">
     <div class="banner-hor__wraper">
         <div class="banner-hor__wraper__content">
@@ -31,3 +32,4 @@ if( $link ){
         </div>
     </div>
 </section>
+<?php } ?>
