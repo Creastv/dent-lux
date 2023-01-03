@@ -33,7 +33,29 @@ body.home {
     background-position: 66%;
   }
 }
-
+.arrows {
+  position: absolute;
+  // background: red;
+  z-index: 999;
+  padding: 20px;
+  right: 0;
+  top: 50%;
+  .sw-pagination {
+    span {
+      display: block;
+      margin: 10px 0 !important;
+      width: 15px;
+      height: 15px;
+      border: 1px solid $main !important;
+      opacity: 1 !important;
+      background-color: #fff;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $main;
+      border: 1px solid #fff !important;
+    }
+  }
+}
 .svg-brand {
   position: absolute;
   z-index: 2;

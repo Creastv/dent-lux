@@ -235,6 +235,9 @@
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.03);
   transition: all 1s;
 
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
   ul {
     list-style: none;
     padding: 0 10px;
@@ -262,10 +265,10 @@
   }
 }
 .sticky-social-media.active {
-  bottom: 20px;
+  bottom: 0px;
 }
 #go-to-top.active {
-  bottom: 40px;
+  bottom: 26px;
   transition: all 1s;
 }
 

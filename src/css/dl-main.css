@@ -674,6 +674,8 @@ body {
           box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.03);
   -webkit-transition: all 1s;
   transition: all 1s;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .sticky-social-media ul {
@@ -706,11 +708,11 @@ body {
 }
 
 .sticky-social-media.active {
-  bottom: 20px;
+  bottom: 0px;
 }
 
 #go-to-top.active {
-  bottom: 40px;
+  bottom: 26px;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -2156,6 +2158,29 @@ body.home #header {
   .slide {
     background-position: 66%;
   }
+}
+
+.arrows {
+  position: absolute;
+  z-index: 999;
+  padding: 20px;
+  right: 0;
+  top: 50%;
+}
+
+.arrows .sw-pagination span {
+  display: block;
+  margin: 10px 0 !important;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #f39200 !important;
+  opacity: 1 !important;
+  background-color: #fff;
+}
+
+.arrows .sw-pagination .swiper-pagination-bullet-active {
+  background-color: #f39200;
+  border: 1px solid #fff !important;
 }
 
 .svg-brand {
