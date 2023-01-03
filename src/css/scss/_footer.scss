@@ -228,11 +228,12 @@
 
 .sticky-social-media {
   position: fixed;
-  bottom: 15px;
+  bottom: -150px;
   z-index: 99;
   right: 70px;
   background: rgb(255, 255, 255);
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.03);
+  transition: all 1s;
 
   ul {
     list-style: none;
@@ -260,10 +261,12 @@
     }
   }
 }
-
+.sticky-social-media.active {
+  bottom: 20px;
+}
 #go-to-top.active {
   bottom: 40px;
-  transform: all 0.8s;
+  transition: all 1s;
 }
 
 #go-to-top {
@@ -274,7 +277,7 @@
   height: 14px;
   bottom: -100px;
   right: 20px;
-  transform: all 0.8s;
+  transition: all 1s;
   svg {
     path {
       fill: $main;

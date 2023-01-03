@@ -36,6 +36,7 @@
   }
   // Go to Top
   const goToTop = document.querySelector("#go-to-top");
+  const social = document.querySelector(".js--sticky-social-media");
   goToTop.addEventListener("click", () => {
     document.documentElement.scrollTop = 0;
   });
@@ -45,10 +46,15 @@
     } else {
       goToTop.classList.remove("active");
     }
+
+    if (window.pageYOffset >= 300) {
+      social.classList.add("active");
+    } else {
+      social.classList.remove("active");
+    }
   });
   // sticy nabvbar
   const navbar = document.querySelector("#header");
-  // var lastScrollTop = 0;
   document.addEventListener("scroll", () => {
     var st = window.pageYOffset || document.documentElement.scrollTop;
     if (window.pageYOffset >= 50) {
@@ -56,14 +62,6 @@
     } else {
       navbar.classList.remove("active");
     }
-    // if (window.pageYOffset >= 400) {
-    //   if (st > lastScrollTop) {
-    //     navbar.classList.add("up");
-    //   } else {
-    //     navbar.classList.remove("up");
-    //   }
-    // }
-    // lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
   });
 
   // set body padding top by geting header height

@@ -666,12 +666,14 @@ body {
 
 .sticky-social-media {
   position: fixed;
-  bottom: 15px;
+  bottom: -150px;
   z-index: 99;
   right: 70px;
   background: white;
   -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.03);
           box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.03);
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .sticky-social-media ul {
@@ -703,10 +705,14 @@ body {
   fill: #f39200;
 }
 
+.sticky-social-media.active {
+  bottom: 20px;
+}
+
 #go-to-top.active {
   bottom: 40px;
-  -webkit-transform: all 0.8s;
-          transform: all 0.8s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 #go-to-top {
@@ -717,8 +723,8 @@ body {
   height: 14px;
   bottom: -100px;
   right: 20px;
-  -webkit-transform: all 0.8s;
-          transform: all 0.8s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 #go-to-top svg path {

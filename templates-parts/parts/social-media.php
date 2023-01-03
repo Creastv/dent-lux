@@ -4,7 +4,7 @@ $insta = get_field("instagram", 'options');
 $in    = get_field("linkiedin", 'options');
 ?>
 
-<div class="sticky-social-media">
+<div class="sticky-social-media js--sticky-social-media">
 
     <ul>
         <li> <span>Sledź nas na:</span></li>
