@@ -41,10 +41,11 @@ $subtitle= get_field('opis_pod_naglowkiem');
         <rect id="Rectangle_4" data-name="Rectangle 4" width="111" height="2" fill="#f6b846" />
         <rect id="Rectangle_4_copy" data-name="Rectangle 4 copy" width="43" height="2" transform="translate(119)" fill="#f6b846" />
     </svg>
+    <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
     <?php if($title) { ?>
     <p><?php echo $subtitle; ?></p>
     <?php } ?>
-    <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
+
 
     <svg class="brand-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1217.9px" height="215.2px" viewBox="0 0 1217.9 215.2" style="enable-background:new 0 0 1217.9 215.2;" xml:space="preserve">
         <g class="st0">
