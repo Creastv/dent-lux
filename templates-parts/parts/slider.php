@@ -12,7 +12,7 @@ $sliders = get_field('slajdy');
                             <div class="row">
                                 <div class="slider__wraper">
                                     <div class="slider__content">
-                                        <h1 class="h1"><?php echo $slide['tytul'];?></h1>
+                                        <<?php echo $slide['tag'];?> class="h1"><?php echo $slide['tytul'];?></<?php echo $slide['tag'];?>>
                                         <p><?php echo $slide['dopisek'];?></p>
                                         <a href="<?php echo $slide['link']['url'];?>" class="btn ">
                                             <?php echo $slide['link']['title'];?>
