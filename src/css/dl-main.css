@@ -313,6 +313,24 @@ body {
   }
 }
 
+.lower_shortcut_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.lower_shortcut_container .lower_shortcut {
+  padding: 3px 8px;
+  background-color: #eaf2f7;
+  font-size: 12px;
+}
+
 #footer {
   background-color: #111112;
   width: 100%;

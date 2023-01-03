@@ -64,3 +64,15 @@ body {
     display: block;
   }
 }
+
+.lower_shortcut_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  .lower_shortcut {
+    padding: 3px 8px;
+    background-color: $light;
+    font-size: 12px;
+  }
+}
