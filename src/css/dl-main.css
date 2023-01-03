@@ -666,23 +666,36 @@ body {
 
 .sticky-social-media {
   position: fixed;
-  top: 50%;
+  bottom: 15px;
   z-index: 99;
-  background: rgba(0, 0, 0, 0.3);
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  right: 0px;
-  padding: 20px;
+  right: 70px;
+  background: white;
+  -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.03);
 }
 
 .sticky-social-media ul {
   list-style: none;
-  padding: 0px;
+  padding: 0 10px;
+  margin: 0;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.sticky-social-media ul li span {
+  display: block;
+  color: #000000;
+  font-size: 12px;
 }
 
 .sticky-social-media ul li a {
-  padding: 10px 0;
+  padding: 10px;
   display: inline-block;
 }
 

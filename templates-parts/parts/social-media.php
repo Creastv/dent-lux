@@ -3,14 +3,16 @@ $fb    = get_field("facebook", 'options');
 $insta = get_field("instagram", 'options');
 $in    = get_field("linkiedin", 'options');
 ?>
-<?php if($fb && $insta) { ?>
+
 <div class="sticky-social-media">
+
     <ul>
+        <li> <span>Sledź nas na:</span></li>
         <?php if($fb) { ?>
         <li>
             <a href="<?php echo $fb; ?>" rel="nofollow" target="_blank">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="9.7px" height="18.8px" viewBox="0 0 9.7 18.8" style="enable-background:new 0 0 9.7 18.8;" xml:space="preserve">
-                    <path fill="#FFFFFF" d="M2.9,18.8c0-0.1,0-0.2,0-0.2c0-2.7,0-5.4,0-8.1c0-0.1,0-0.2,0-0.3c-1,0-1.9,0-2.9,0C0,9.1,0,8,0,6.9
+                    <path fill="#1778F2" d="M2.9,18.8c0-0.1,0-0.2,0-0.2c0-2.7,0-5.4,0-8.1c0-0.1,0-0.2,0-0.3c-1,0-1.9,0-2.9,0C0,9.1,0,8,0,6.9
                     c1,0,1.9,0,2.9,0c0-0.1,0-0.2,0-0.2c0-0.9,0-1.7,0-2.6C2.9,3,3.3,2,4,1.2c0.6-0.6,1.3-0.9,2.1-1.1C6.7,0,7.4,0,8,0
                     c0.5,0,1.1,0.1,1.6,0.1c0,0,0.1,0,0.1,0c0,1,0,2,0,3c-0.1,0-0.1,0-0.2,0c-0.7,0-1.3,0-2,0c-0.8,0-1.2,0.5-1.2,1.2
                     c0,0.8,0,1.6,0,2.4c0,0,0,0,0,0.1c1.1,0,2.2,0,3.3,0C9.5,8,9.3,9.1,9.2,10.2c-1,0-1.9,0-2.9,0c0,0.1,0,0.1,0,0.2c0,2.8,0,5.5,0,8.3
@@ -54,4 +56,3 @@ $in    = get_field("linkiedin", 'options');
         <?php } ?>
     </ul>
 </div>
-<?php } ?>
