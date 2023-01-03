@@ -106,6 +106,7 @@ a {
   font-family: "Roboto Slab", serif;
   font-weight: 400;
   font-size: 36px;
+  line-height: 44px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -450,7 +451,7 @@ body {
   margin-top: -130px;
   position: relative;
   z-index: 2;
-  padding: 100px 15px 100px 0;
+  padding: 50px 15px 50px 0;
 }
 
 @media only screen and (max-width: 998px) {
@@ -636,6 +637,7 @@ body {
 .footer__w__menus--item ul li a {
   color: #cccccc;
   font-size: 14px;
+  line-height: 18px;
   display: inline-block;
   padding: 5px 0;
 }
