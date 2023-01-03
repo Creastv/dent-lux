@@ -217,7 +217,7 @@ a {
   margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 998px) {
+@media only screen and (max-width: 768px) {
   .float-left {
     float: none;
     margin: 0 0 20px 0;
