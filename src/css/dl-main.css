@@ -217,6 +217,15 @@ a {
   margin-bottom: 10px;
 }
 
+@media only screen and (max-width: 998px) {
+  .float-left {
+    float: none;
+    margin: 0 0 20px 0;
+    width: 100%;
+    height: auto;
+  }
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;

@@ -177,4 +177,10 @@ a {
   float: left;
   margin-right: 15px;
   margin-bottom: 10px;
+  @media #{$md} {
+    float: none;
+    margin: 0 0 20px 0;
+    width: 100%;
+    height: auto;
+  }
 }
