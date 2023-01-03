@@ -41,7 +41,7 @@ $subtitle= get_field('opis_pod_naglowkiem');
         <rect id="Rectangle_4" data-name="Rectangle 4" width="111" height="2" fill="#f6b846" />
         <rect id="Rectangle_4_copy" data-name="Rectangle 4 copy" width="43" height="2" transform="translate(119)" fill="#f6b846" />
     </svg>
-    <?php if ( is_page_template( 'templates-parts/page-left-sidebar-uslugi.php' ) ) {?>
+    <?php if ( is_page_template( 'page-left-sidebar-uslugi.php' ) ) {?>
     <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
     <?php } ?>
     <?php if($title) { ?>
