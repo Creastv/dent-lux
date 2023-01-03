@@ -19,6 +19,8 @@ while ( have_posts() ) : the_post(); ?>
 		get_template_part( 'templates-parts/parts/about-us' );
 		} elseif(is_page(16)) {
 		get_template_part( 'templates-parts/parts/uslugi' );
+		} elseif(is_page(465)) {
+		get_template_part( 'templates-parts/parts/uslugi' );
 		} elseif(is_page(28)) {
 		get_template_part( 'templates-parts/parts/faq' );
 		} elseif(is_page(12)) {
