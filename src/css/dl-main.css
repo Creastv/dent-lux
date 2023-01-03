@@ -1084,10 +1084,9 @@ body {
 }
 
 .entry-wraper aside .menu ul li a {
-  font-size: 21px;
+  font-size: 16px;
   color: #000000;
   display: block;
-  padding: 5px 0;
 }
 
 .entry-wraper aside .menu ul li a:hover {
@@ -1378,7 +1377,8 @@ body {
 }
 
 .offers__item p {
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 18px;
   color: #797070;
   margin-bottom: 0;
   padding-bottom: 0px;
