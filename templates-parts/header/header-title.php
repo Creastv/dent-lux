@@ -44,6 +44,7 @@ $subtitle= get_field('opis_pod_naglowkiem');
     <?php if($title) { ?>
     <p><?php echo $subtitle; ?></p>
     <?php } ?>
+    <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
 
     <svg class="brand-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1217.9px" height="215.2px" viewBox="0 0 1217.9 215.2" style="enable-background:new 0 0 1217.9 215.2;" xml:space="preserve">
         <g class="st0">
