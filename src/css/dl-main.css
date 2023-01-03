@@ -670,8 +670,8 @@ body {
   z-index: 99;
   right: 70px;
   background: white;
-  -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.03);
-          box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.03);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   -webkit-transition: all 1s;
   transition: all 1s;
   border-top-left-radius: 12px;
