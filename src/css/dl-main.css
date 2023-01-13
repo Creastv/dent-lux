@@ -2160,7 +2160,7 @@ body.home #header {
   }
 }
 
-.arrows {
+.arrow {
   position: absolute;
   z-index: 999;
   padding: 20px;
@@ -2168,7 +2168,7 @@ body.home #header {
   top: 50%;
 }
 
-.arrows .sw-pagination span {
+.arrow .sw-pagination span {
   display: block;
   margin: 10px 0 !important;
   width: 15px;
@@ -2178,7 +2178,7 @@ body.home #header {
   background-color: #fff;
 }
 
-.arrows .sw-pagination .swiper-pagination-bullet-active {
+.arrow .sw-pagination .swiper-pagination-bullet-active {
   background-color: #f39200;
   border: 1px solid #fff !important;
 }

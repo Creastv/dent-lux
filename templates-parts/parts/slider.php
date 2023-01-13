@@ -28,7 +28,7 @@ $sliders = get_field('slajdy');
                 </div>
             </div>
             <?php } ?>
-            <div class="arrows">
+            <div class="arrow">
                 <div class="sw-pagination"></div>
             </div>
         </div>
