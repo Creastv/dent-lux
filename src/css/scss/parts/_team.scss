@@ -21,12 +21,16 @@
     left: -30px;
   }
   .team__person_img {
-    width: 2000px;
+    width: 200px;
     height: 200px;
     margin-right: 30px;
     border-radius: 100%;
     overflow: hidden;
     text-align: center;
+    img {
+      width: 200px;
+      height: 200px;
+    }
     @media #{$sm} {
     }
   }
