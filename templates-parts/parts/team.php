@@ -8,7 +8,7 @@ $team = get_field('zesol');
         <div class="team__person">
             <div class="team__person_img">
                 <?php if($te['zdecie']) {  ?>
-                <?php echo wp_get_attachment_image( $te['zdecie'], 'person' ); ?>
+                <?php echo wp_get_attachment_image( $te['zdecie'], 'full' ); ?>
                 <?php } ?>
             </div>
             <div class="team__person_content">
