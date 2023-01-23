@@ -30,3 +30,12 @@ if ( function_exists( 'acf_add_options_page' ) ) {
 	) );
 
 }
+
+add_filter('webpc_attachment_paths', function($paths) {
+  $suffix = '-zespol';
+  foreach ($paths as $index => $path) {
+    if (!preg_match('/(.*?)' . $suffix . '((-(.*))?)\.(jpe?g|png|gif)/', basename($path))) continue;
+    unset($paths[$index]);
+  }
+  return $paths;
+});
