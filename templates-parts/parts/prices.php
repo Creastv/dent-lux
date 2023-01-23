@@ -19,7 +19,7 @@ $prices = get_field('cennik');
                 <?php foreach($price['uslugi'] as $usluga) { ?>
                 <div class="usl">
                     <?php if($usluga['nazwa_uslugi']) {  ?>
-                    <p><b><?php echo $usluga['nazwa_uslugi']; ?></b></p>
+                    <p><?php echo $usluga['nazwa_uslugi']; ?></p>
                     <?php } ?>
                     <?php if($usluga['cena']) {  ?>
                     <span><b><?php echo $usluga['cena']; ?></b></span>
